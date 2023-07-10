@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Bar Ista</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">Correo</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="registrarme">REGISTRARME</string>
+    <string name="camara">Camara</string>
+    <string name="Camara">camara</string>
+    <string name="Mcamara">Camara</string>
+    <string name="Camera">Camara</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="correos">Correo</string>
+    <string name="todo">TODO</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="tomar_foto">Tomar Foto</string>
+    <string name="todos">TODO</string>
+    <string name="tod">TOD</string>
+</resources>
