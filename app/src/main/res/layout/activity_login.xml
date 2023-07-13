@@ -52,6 +52,7 @@
         android:id="@+id/contrasen"
         android:layout_width="376dp"
         android:layout_height="89dp"
+        android:layout_marginTop="436dp"
         android:background="@drawable/edit_text_rounded"
         android:ems="10"
         android:hint="@string/contrasena"
@@ -62,8 +63,9 @@
         android:textColor="#000000"
         android:textColorHint="#BF4B4B4B"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="518dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/coreo"
@@ -83,8 +85,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/contrasen"
         app:layout_constraintEnd_toEndOf="@+id/contrasen"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/contrasen" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/contrasen"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView"
