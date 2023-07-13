@@ -7,6 +7,58 @@
     android:background="@drawable/gradient_background">
 
 
+    <EditText
+        android:id="@+id/contrasena"
+        android:layout_width="460dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:backgroundTint="@color/lightGrey"
+        android:drawableTint="@color/lightGrey"
+        android:ems="10"
+        android:foregroundTint="@color/lightGrey"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/correo"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="461dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="192dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/contrasena"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/contrasena"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="460dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/contrasena"
+        app:layout_constraintStart_toStartOf="@+id/contrasena"
+        app:layout_constraintTop_toBottomOf="@+id/contrasena" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
@@ -19,59 +71,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <EditText
-                android:id="@+id/nombre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/nombre"
-                android:importantForAutofill="no"
-                android:inputType="textPersonName"
-                android:minHeight="48dp" />
-
-            <EditText
-                android:id="@+id/correo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:ems="10"
-                android:hint="@string/correo"
-                android:inputType="textEmailAddress"
-                android:minHeight="48dp"
-                android:textColorHint="#757575" />
-
-            <EditText
-                android:id="@+id/contrasena"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:ems="10"
-                android:hint="@string/contrase_a"
-                android:inputType="textPassword"
-                android:minHeight="48dp" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="15dp" />
-
-        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/btn_registro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="445dp"
+        android:layout_height="80dp"
         android:text="@string/registrarme"
+        android:textColorHint="#3A0E0E"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nombre"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/nombre"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="115dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/correo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.342" />
+        app:srcCompat="@drawable/logoapro" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="258dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="88dp"
+        android:foregroundTint="#8F1818"
+        android:text="ISTA BAR"
+        android:textColor="#000000"
+        android:textColorHint="#3E2323"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/correo"
+        app:layout_constraintEnd_toEndOf="@+id/correo"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toEndOf="@+id/imageView5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
